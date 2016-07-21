@@ -781,6 +781,8 @@ A list of all ``box.space`` functions follows, then comes a list of all
         ``field-value(s)``, a new one is inserted with initial counter
         value set to ``1``.
 
+        Deprecation notice: This function will not be supported in Tarantool version 1.7.
+
 
         Parameters: :samp:`{space_object}` = an :ref:`object reference <index-object_reference>`;
         :codeitalic:`field-value(s)` (type = Lua table or scalar) = values which must match the primary key.
@@ -821,6 +823,8 @@ A list of all ``box.space`` functions follows, then comes a list of all
         will be the counter. If there is no tuple matching the
         ``field-value(s)``, a new one is not inserted. If the counter value drops
         to zero, the tuple is deleted.
+
+        Deprecation notice: This function will not be supported in Tarantool version 1.7.
 
         Parameters: :samp:`{space_object}` = an :ref:`object reference <index-object_reference>`;
         :codeitalic:`field-value(s)` (type = Lua table or scalar) = values which must match the primary key.
